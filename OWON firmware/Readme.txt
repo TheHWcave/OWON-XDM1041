@@ -1,4 +1,4 @@
-I have got permission from OWON to share this ZIP file which contains firmware XDM1041_OS_V2.1.2_20210525.bin for the XDM1041 meter.
+I have got permission from OWON to share the firmware XDM1041_OS_V2.1.2_20210525.bin for the XDM1041 meter.
 This software runs on my meter reasonably well (you can see the process of upgrading in my Youtube video https://youtu.be/ULxfLKsuCSs) . According to OWON there are no other updates at the moment. But I know there are still issues with it, mainly:
 on SCPI:
 -  you can get it into a mode where it responds to any command with OK/nOK/nOK/n (the /n being the newline control char) 
