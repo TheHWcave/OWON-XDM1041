@@ -6,4 +6,9 @@ on SCPI:
 -  if TEMP:RTD:SHOW MEAS is sent, the temperature value returned by MEAS? or MEAS1? is no longer updated, i.e. the meter always sends the same value, regardless of the actual temperature
 Capacitor mode AUTO RANGING is very slow until about 500uF. From then on  it stops working completely. For example for 1000uF, the meter never settles on a range and sometimes some strange (Chinese?) characters can be seen momentarily glitching on the display. Switching to manual range works fine and capacitors can be measured ok.
 
+The firmware loader program from OWON is too big to be send per email
+The x00 to x14 files are binary chunks which can be reassembled to form a ZIP file which contains the Windows loader program for the XDM12041 firmware which is also included (V2.1.2). To reassemble on a Windows machine you need to use the command line (DOS prompt). Go to the directory where you stored the 15 files and use:
+
+copy/b x* update.zip
+
 One more thing: This is OWON's software and if you use it and brick your XDM1041, don't blame me. Upgrading the firmware is entierly your own risk
