@@ -1,0 +1,23 @@
+Summary for com.owon.uppersoft.patch_1.17.7.v201911261626.jar
+Decompiled with CFR 0.152
+
+
+com.owon.uppersoft.common.comm.frame.ChangeParamComposite
+----------------------------
+
+initTable(org.eclipse.swt.widgets.Composite )
+  Unable to fully structure code
+
+
+com.owon.uppersoft.common.comm.frame.txtedit.TxtEditComposite
+----------------------------
+
+doDiy(net.sf.json.JSONArray )
+  Unable to fully structure code
+
+
+com.owon.uppersoft.patch.direct.util.LZSSOutputStream
+----------------------------
+
+pack_write(int byte[] int boolean )
+  Unable to fully structure code
