@@ -72,7 +72,7 @@ class SCPI:
 		
 		#for b in buf: print(hex(b)+' ',end='')
 		#print()
-		res = buf.decode(errors="backslashreplace")
+		res = buf.decode('gbk',errors="backslashreplace")
 		x = res.find('\r\n') 
 		if x == len(res)-2:
 			res = res.strip()
@@ -313,12 +313,6 @@ class XDM1041_GUI():
 						Res = 0
 				else:
 					Successful = True
-					if s.endswith('\\xa6\\xb8'): 
-						s = s[:-8] +'Ohm'
-					elif s.endswith('\\xa6\\xccF'): 
-						s = s[:-9] +'uF'
-					elif s.endswith('"'):
-						s = s.strip('"')
 					Res = s
 			else:
 				#print('nothing'+str(n))
